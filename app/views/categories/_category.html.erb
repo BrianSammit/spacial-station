@@ -1,7 +1,13 @@
 <div id="<%= dom_id category %>">
   <p>
-    <strong>Name:</strong>
+    <strong>Category:</strong>
     <%= category.name %>
   </p>
+
+  <% category.rockets.each do |rocket|%>
+    <p>
+      <%= rocket.name %> | <%= link_to "View Rocket", rocket %>
+    </p>
+  <% end %>
 
 </div>
