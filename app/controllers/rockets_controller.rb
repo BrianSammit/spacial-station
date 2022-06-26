@@ -65,7 +65,7 @@ class RocketsController < ApplicationController
   end
 
   def rocket_params
-    params.require(:rocket).permit(:name, :fuel, :country, :activity, :category_id)
+    params.require(:rocket).permit(:name, :fuel, :country, :activity, :category_id , :img_url)
   end
 
   def set_categories

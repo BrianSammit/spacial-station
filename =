@@ -1,0 +1,21 @@
+  <p>
+    <strong>Categoria:</strong>
+    <%= category.name %>
+  </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <% category.rockets.each do |rocket|%>
+            <img src="<%= rocket.img_url %>" class="card-img" alt="Nave" style="height: 250px">
+            <div class="card-body">
+              <h5 class="card-title"><%= rocket.name %></h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+
