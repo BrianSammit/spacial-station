@@ -12,7 +12,8 @@ Este proyecto consiste en la creacion, visualizacion y categorizacion de naves e
 
 ## Video
 
-[Loom video](https://www.loom.com/share/cde6ff53ac5b4879838f462af8523dad)
+[Loom video](https://www.loom.com/share/ea223fd02b4d4d71a9f89f9890071599)
+[Youtube video](https://youtu.be/1lzanPXCp0c)
 
 ## Creado con
 
