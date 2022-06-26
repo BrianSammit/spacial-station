@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
   <div class="container-fluid">
     <%= link_to root_path do %>
         <%= image_tag "logo.png", height: 50 %>
@@ -10,20 +10,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <%= link_to "Inicio", root_path, class: 'nav-link active' %>
+          <%= link_to "Inicio", root_path, class: 'nav-link active text-white' %>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Opciones
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><%= link_to "Vehiculo lanzadera", category_path(1), class: 'dropdown-item' %></li>
-            <li><%= link_to "Naves no tripuladas o roboticas", category_path(2), class: 'dropdown-item' %></li>
-            <li><%= link_to "Naves espaciales tripuladas", category_path(3), class: 'dropdown-item' %></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><%= link_to "Todas las naves", rockets_path, class: 'dropdown-item' %></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><%= link_to "Crear nave", new_rocket_path, class: 'dropdown-item' %></li>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><%= link_to "Vehiculo lanzadera", category_path(1), class: 'dropdown-item text-white' %></li>
+            <li><%= link_to "Naves no tripuladas o roboticas", category_path(2), class: 'dropdown-item text-white' %></li>
+            <li><%= link_to "Naves espaciales tripuladas", category_path(3), class: 'dropdown-item text-white' %></li>
+            <li><hr class="dropdown-divider text-white"></li>
+            <li><%= link_to "Todas las naves", rockets_path, class: 'dropdown-item text-white' %></li>
+            <li><hr class="dropdown-divider text-white"></li>
+            <li><%= link_to "Crear nave", new_rocket_path, class: 'dropdown-item text-white' %></li>
             </ul>
         </li>
       </ul>
