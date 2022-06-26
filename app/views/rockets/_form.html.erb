@@ -11,32 +11,46 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+  <form>
+    
+    <div class="d-flex flex-column justify-content-center">
+      <div class="mb-3">
+        <%= form.label :name, style: "display: block", class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
 
-  <div>
-    <%= form.label :fuel, style: "display: block" %>
-    <%= form.text_field :fuel %>
-  </div>
+      <div class="mb-3">
+        <%= form.label :fuel, style: "display: block", class: "form-label"%>
+        <%= form.text_field :fuel, class: "form-control" %>
+      </div>
 
-  <div>
-    <%= form.label :country, style: "display: block" %>
-    <%= form.text_field :country %>
-  </div>
+      <div class="mb-3">
+        <%= form.label :country, style: "display: block", class: "form-label" %>
+        <%= form.text_field :country, class: "form-control" %>
+      </div>
 
-  <div>
-    <%= form.label :activity, style: "display: block" %>
-    <%= form.text_field :activity %>
-  </div>
+      <div class="mb-3">
+        <%= form.label :activity, style: "display: block", class: "form-label" %>
+        <%= form.text_field :activity, class: "form-control" %>
+      </div>
 
-    <div>
-    <%= form.label :category, style: "display: block" %>
-    <%= form.select :category_id, options_for_select(@categories.collect {|cat| [cat.name, cat.id]}) %>
-  </div>
+      <div class="mb-3">
+        <%= form.label :img_url, style: "display: block", class: "form-label" %>
+        <%= form.text_field :img_url, class: "form-control" %>
+        <div  class="form-text">Añadir el url de la imagen</div>
+      </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+
+      <div class="mb-3">
+        <%= form.label :category, style: "display: block", class: "form-label" %>
+        <%= form.select :category_id, options_for_select(@categories.collect {|cat| [cat.name, cat.id]}) %>
+      </div>
+
+      <div>
+        <%= form.button "Crear nave", type: "submit", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+    </div>
+  </form>
+
+

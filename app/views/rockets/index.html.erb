@@ -1,14 +1,16 @@
 <p style="color: green"><%= notice %></p>
+<div>
+  
+  <h1>Rockets</h1>
 
-<h1>Rockets</h1>
-
-<div id="rockets">
-  <% @rockets.each do |rocket| %>
-    <%= render rocket %>
-    <p>
+  <div id="rockets">
+    <% @rockets.each do |rocket| %>
+      <%= render rocket %>
+      <p>
       <%= link_to "Show this rocket", rocket %>
-    </p>
-  <% end %>
-</div>
+      </p>
+    <% end %>
+  </div>
 
-<%= link_to "New rocket", new_rocket_path %>
+  <%= link_to "New rocket", new_rocket_path %>
+</div>
