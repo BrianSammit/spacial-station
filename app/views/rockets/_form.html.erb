@@ -46,8 +46,8 @@
         <%= form.select :category_id, options_for_select(@categories.collect {|cat| [cat.name, cat.id]}) %>
       </div>
 
-      <div>
-        <%= form.button "Crear nave", type: "submit", class: "btn btn-primary" %>
+      <div class="d-flex justify-content-center ">
+        <%= form.button "Crear nave", type: "submit", class: "btn btn-info text-white" %>
       </div>
     <% end %>
     </div>

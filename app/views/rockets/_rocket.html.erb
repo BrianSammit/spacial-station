@@ -10,7 +10,7 @@
         <p class="card-text">Pais de origen: <%= rocket.country %></p>
         <p class="card-text">Tiempo de actividad: <%= rocket.activity %></p>
         <p class="card-text">Categoria a la que pertenece: <%= link_to rocket.category.name, rocket.category, class: "text-info text-decoration-none" %></p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Ultima actualizacion <%= rocket.updated_at %></small></p>
       </div>
     </div>
   </div>

@@ -1,16 +1,17 @@
-<p style="color: green"><%= notice %></p>
 <div>
-  
-  <h1>Rockets</h1>
+  <p style="color: green"><%= notice %></p>
+  <h1 class="text-white text-center">Rockets</h1>
 
   <div id="rockets">
     <% @rockets.each do |rocket| %>
       <%= render rocket %>
-      <p>
-      <%= link_to "Show this rocket", rocket %>
-      </p>
+      <div class="d-flex justify-content-center ">
+        <%=  link_to "Mostrar esta nave", rocket, class: "btn btn-info text-white" %>
+      </div>
     <% end %>
   </div>
 
-  <%= link_to "New rocket", new_rocket_path %>
+  <div class="d-flex justify-content-center m-2">
+    <%=  link_to "Nueva nave", new_rocket_path, class: "btn btn-info text-white" %>
+  </div>
 </div>
