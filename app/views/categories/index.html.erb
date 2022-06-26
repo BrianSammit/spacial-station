@@ -1,18 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Categorias de naves espaciales</h1>
+<div class="d-flex flex-column mt-5">
+  <h1 class="text-center m-5">Tipos de naves espaciales</h1>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <% @categories.each do |category| %>
-    <div class="col">
-      <div class="card bg-dark text-white">
-        <img src="<%= category.img %>" class="card-img" alt="Nave">
-        <div class="card-img-overlay">
-          <p>
-          <%= link_to "Show this category", category %>
-          </p>
-        </div>
-      </div>      
-    </div>
-  <% end %>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% @categories.each do |category| %>
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="<%= category.img %>" class="card-img" alt="Nave" style="height: 250px">
+          <div class="card-img-overlay">
+            <h5 class="card-title"><%= category.name %></h5>
+            <p>
+              <%= link_to "Ver naves", category, class: "card-text text-decoration-none text-white" %>
+            </p>
+          </div>
+        </div>      
+      </div>
+    <% end %>
+  </div>
+  
 </div>
+
