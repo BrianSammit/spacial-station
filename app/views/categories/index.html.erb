@@ -1,14 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Categories</h1>
+<h1>Categorias de naves espaciales</h1>
 
-<div id="categories">
+<div class="row row-cols-1 row-cols-md-3 g-4">
   <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+    <div class="col">
+      <div class="card bg-dark text-white">
+        <img src="<%= category.img %>" class="card-img" alt="Nave">
+        <div class="card-img-overlay">
+          <p>
+          <%= link_to "Show this category", category %>
+          </p>
+        </div>
+      </div>      
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New category", new_category_path %>

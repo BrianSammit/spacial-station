@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Category.create(name: "Vehículo lanzadera")
-Category.create(name: "Naves no tripuladas o roboticas")
-Category.create(name: "Naves espaciales tripuladas")
+Category.create(name: "Vehículo lanzadera", img: 'https://c.pxhere.com/photos/76/05/atlantis_space_shuttle_rollout_launch_pad_cape_canaveral_florida_usa_rocket-836650.jpg!d')
+Category.create(name: "Naves no tripuladas o roboticas", img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/A5EC/production/_101567424_23128844405_6151e276cd_k.jpg' )
+Category.create(name: "Naves espaciales tripuladas", img: 'https://danielmarin.naukas.com/files/2018/01/3.jpg')
