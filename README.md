@@ -8,7 +8,7 @@ Este proyecto consiste en la creacion, visualizacion y categorizacion de naves e
 
 ## Live demo
 
-[live demo](https://rocky-gorge-53007.herokuapp.com/)
+[live demo](https://spacialstation.herokuapp.com/)
 
 ## Video
 
@@ -70,4 +70,4 @@ Dame una ⭐️ si te gusto el proyecto
 
 ## 📝 Licencia
 
-El proyecto en [MIT](lic.url) licensed.![]
+El proyecto en [MIT](lic.url) licensed.!
