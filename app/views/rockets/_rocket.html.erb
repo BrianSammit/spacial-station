@@ -1,4 +1,4 @@
-<div id="<%= dom_id rocket %>" class="card mb-3" style="max-width: 540px;">
+<div id="<%= dom_id rocket %>" class="card mb-3 mt-5" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="<%= rocket.img_url %>" class="img-fluid rounded-start h-100" alt="nave" style="object-fit: cover;">
@@ -9,7 +9,7 @@
         <p class="card-text">Combustible: <%= rocket.fuel %></p>
         <p class="card-text">Pais de origen: <%= rocket.country %></p>
         <p class="card-text">Tiempo de actividad: <%= rocket.activity %></p>
-        <p class="card-text">Categoria a la que pertenece: <%= link_to rocket.category.name, rocket.category %></p>
+        <p class="card-text">Categoria a la que pertenece: <%= link_to rocket.category.name, rocket.category, class: "text-info text-decoration-none" %></p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>

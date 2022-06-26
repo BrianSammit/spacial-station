@@ -1,10 +1,12 @@
-<h1>Editing rocket</h1>
+<div class="text-white">
+  <h1>Editar</h1>
 
-<%= render "form", rocket: @rocket %>
+  <%= render "form", rocket: @rocket %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Show this rocket", @rocket %> |
-  <%= link_to "Back to rockets", rockets_path %>
+  <div>
+    <%= link_to "Show this rocket", @rocket %> |
+    <%= link_to "Back to rockets", rockets_path %>
+  </div>
 </div>
